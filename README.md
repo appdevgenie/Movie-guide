@@ -21,6 +21,10 @@ The Movie guide application was one of my projects in the Android Developer Nano
 
 * [Udacity](https://www.udacity.com/course/android-developer-nanodegree--nd801)
 
+## Developer
+
+* Eugene Saayman appdevgenie@gmail.com
+
 ## License
 
     Copyright 2018 Eugene Saayman (appdevgenie)
