@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/details_margin_vertical"
+    android:paddingTop="@dimen/details_margin_vertical">
+
+    <ImageButton
+        android:id="@+id/ibMovieDetailsTrailerPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/image_button_margin"
+        android:layout_marginLeft="@dimen/image_button_margin"
+        android:layout_marginRight="@dimen/image_button_margin"
+        android:layout_marginStart="@dimen/image_button_margin"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/play_trailer_imagebutton"
+        app:srcCompat="@drawable/ic_action_play" />
+
+    <TextView
+        android:id="@+id/tvMovieDetailsTrailerName"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textStyle="italic"
+        tools:text="@string/trailers" />
+
+</LinearLayout>

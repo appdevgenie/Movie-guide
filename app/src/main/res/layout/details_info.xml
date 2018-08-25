@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detailsCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/details_layout_padding"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivDetailsImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/movie_details_image"
+                android:padding="@dimen/details_image_padding"
+                android:src="@drawable/placeholder" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvMovieDetailsTitle"
+                    style="@style/DetailsTextLabel"
+                    android:textColor="@color/colorWhiteText"
+                    tools:text="Movie original title" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMovieDetailsRating"
+                    style="@style/DetailsInfoTextLabel"
+                    android:text="@string/rating"
+                    android:textColor="@color/colorWhiteText" />
+
+                <RatingBar
+                    android:id="@+id/rbMovieDetailsRating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/details_margin_horizontal_tab"
+                    android:layout_marginStart="@dimen/details_margin_horizontal_tab"
+                    android:numStars="10"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/tvMovieDetailsRatingValue"
+                    style="@style/DetailsInfoText"
+                    tools:text="10" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMovieDetailsReleaseDateLabel"
+                    style="@style/DetailsInfoTextLabel"
+                    android:text="@string/release_date"
+                    android:textColor="@color/colorWhiteText" />
+
+                <TextView
+                    android:id="@+id/tvMovieDetailsReleaseDate"
+                    style="@style/DetailsInfoText"
+                    tools:text="1901-01-01" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/tvMovieDetailsOverview"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/details_margin_vertical"
+                android:layout_marginTop="@dimen/details_margin_vertical"
+                tools:text="-----------------------------------------------------------------------" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="@dimen/details_margin_vertical"
+                android:background="@drawable/gradient_bar" />
+
+            <TextView
+                android:id="@+id/tvMovieDetailsTrailer"
+                style="@style/DetailsTextLabel"
+                android:text="@string/trailers"
+                android:textColor="@color/colorWhiteText" />
+
+            <LinearLayout
+                android:id="@+id/layout_trailers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <View
+                android:id="@+id/view_trailers_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/details_margin_vertical"
+                android:layout_marginTop="@dimen/details_margin_vertical"
+                android:background="@drawable/gradient_bar" />
+
+            <TextView
+                android:id="@+id/tvMovieDetailsReviews"
+                style="@style/DetailsTextLabel"
+                android:text="@string/reviews"
+                android:textColor="@color/colorWhiteText" />
+
+            <LinearLayout
+                android:id="@+id/layout_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <View
+                android:id="@+id/view_reviews_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/details_margin_vertical"
+                android:background="@drawable/gradient_bar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
