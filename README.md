@@ -16,6 +16,9 @@ The Movie guide application was one of my projects in the Android Developer Nano
 * [JSON parsing](https://developer.android.com/reference/android/util/JsonReader)
 * [Room database](https://developer.android.com/topic/libraries/architecture/room)
 * [Livedata](https://developer.android.com/topic/libraries/architecture/livedata)
+* [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
+* [CardView](https://developer.android.com/guide/topics/ui/layout/cardview)
+* [GSON](https://developer.android.com/training/volley/request-custom)
 
 ## Android Developer Nanodegree
 
