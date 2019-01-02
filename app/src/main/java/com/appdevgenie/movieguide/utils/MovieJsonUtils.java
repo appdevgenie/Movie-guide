@@ -17,8 +17,8 @@ public class MovieJsonUtils {
 
     private static final String TAG = MovieJsonUtils.class.getSimpleName();
 
-    public static MovieList parseMovieJson(String json) {
 
+        public static MovieList parseMovieJson(String json) {
         List<MovieModel> movieModelList = new ArrayList<>();
         MovieList movieList = new MovieList();
 
